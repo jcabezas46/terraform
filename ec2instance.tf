@@ -14,7 +14,7 @@
 variable "instnacias" {
   description = "nombre de variables"
   type = list(string)
-  default = [ "php" "mysql"  ]
+  default = [ "php","mysql"  ]
   
 }
 resource "aws_instance" "web" {
