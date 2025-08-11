@@ -3,12 +3,15 @@ terraform {
     aws = {
       source  = "hashicorp/aws"
       version = "6.0.0"
-      secret_key =  var.secret_key
-      acces_key = var.acces_key
     }
   }
 }
 
+provider "aws" {
+  secret_key =  var.secret_key
+  access_key = var.acces_key
+
+} 
 
 resource "aws_vpc" "vpc_virginia" {
   cidr_block       = var.virginia_cidr
