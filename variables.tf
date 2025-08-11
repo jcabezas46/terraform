@@ -14,3 +14,11 @@ variable "enable_monitoring" {
     description = "monitoreo"
     type = number
 }   
+
+variable "acces_key" {
+    
+}   
+
+variable "secret_key" {
+    
+}   

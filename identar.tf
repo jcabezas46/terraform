@@ -3,6 +3,8 @@ terraform {
     aws = {
       source  = "hashicorp/aws"
       version = "6.0.0"
+      secret_key =  var.secret_key
+      acces_key = var.acces_key
     }
   }
 }
